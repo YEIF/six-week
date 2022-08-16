@@ -1,0 +1,118 @@
+.table td,
+.table th {
+  padding-top: 19px;
+  padding-bottom: 17px;
+  &:nth-child(1){
+    padding-left: 0;
+  }
+  &:last-child{
+    padding-right: 0;
+  }
+  
+}
+.table > :not(:last-child) > :last-child > *{
+  border-bottom-color:$gray-900;
+}
+.table-id {
+  .material-icons {
+    font-size: 18px;
+    color: $success;
+  }
+}
+
+.table {
+  margin-bottom: 63px;
+}
+
+.page-item.active .page-link {
+  background-color: $success;
+  color: $white;
+
+}
+
+.page-link {
+  padding: 6px 11.5px 7px 11.5px;
+  color: $gray-900;
+  border: 1px solid $success;
+
+  &:hover {
+    border: 1px solid $success;
+  }
+
+  .material-icons {
+    color: $success;
+  }
+}
+
+#adminAdd,
+#adminEdit {
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+
+.form-control[readonly] {
+  background-color: $gray-100;
+}
+
+.send-mail-add {
+  background-color: white;
+  border: 1px solid $success;
+
+  &:hover {
+    background-color: $success;
+    color: white !important;
+  }
+}
+
+.send-mail-edit {
+  background-color: white;
+  border: 1px solid $gray-400;
+}
+
+.access-level {
+  background-position: right 1rem center;
+  // background-size: 12px 7px;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  padding: 3px;
+}
+
+.deactivate {
+  background-color: white;
+  border: 1px solid $danger;
+
+  &:hover {
+    background-color: $danger;
+    color: white !important;
+  }
+}
+
+.view-img {
+  width: 141px;
+  height: 141px;
+  object-fit: cover;
+}
+
+.expand_more {
+  display: none;
+}
+
+.expand_less {
+  display: inline-block;
+}
+
+.collapsed .expand_more {
+  display: inline-block;
+}
+
+.collapsed .expand_less {
+  display: none;
+}

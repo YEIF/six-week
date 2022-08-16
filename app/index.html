@@ -4,66 +4,58 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+<main class="bg-secondary">
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo primary modal
-</button>
-
-<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo secondary modal
-</button>
-
-
-<h2 class="text-primary"> primary 文字範例</h2>
-<h2 class="text-secondary"> secondary 文字範例</h2>
-<button type="button" class="btn btn-dark2" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo dark2 modal
-</button>
-<h2 class="text-dark2">dark2 文字範例</h2>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="container">
+    <div class="bg-home row justify-content-center align-items-center">
+      <div class="col-md-6 ">
+        <div class="text-center position-relative border pt-5 pb-4 m-auto">
+          <div class="square position-absolute top-0 start-0 translate-middle"></div>
+          <div class="square position-absolute top-0 start-100 translate-middle"></div>
+          <div class="square position-absolute top-100 start-0 translate-middle"></div>
+          <div class="square position-absolute top-100 start-100 translate-middle"></div>
+          <h2 class="mb-0">全台最豐富的程式家教</h2>
+          <h2 class="text-white mb-0">在實踐中化理想為現實</h2>
+          <p class="mb-0 fs-lg text-white text-center py-4">全台最專業師資｜到府程式家教｜客製化課程</p>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
+    </div>
+
+  </div>
+  <div class="bg-primary services">
+    <div class="container row mx-auto text-white align-items-center">
+      <div class="col-lg-3 col-md-6 py-5 my-7">
+        <h3 class="fw-bold">手把手帶你 <br>親自到家教到會</h3>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="col-lg-3 col-md-6 py-5 my-7">
+        <div class="text-center"><span class="material-icons">
+            navigate_before
+          </span><span class="material-icons">
+            navigate_next
+          </span>
+          <p class="mb-3 mt-4 fs-lg fw-bold">超過 100 種專業課程</p>
+          <p class="mb-0 fs-lg">學習標準化的電腦形式語言 <br>培養運算思維和邏輯素養</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 py-5 my-7">
+        <div class="text-center">
+          <span class="material-icons">
+            rocket_launch
+          </span>
+          <p class="mb-3 mt-4 fs-lg fw-bold ">高效學習</p>
+          <p class="mb-0 fs-lg">客製化專屬課表 <br>讓學習變簡單</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 py-5 my-7 bg-blackDark specify-place">
+        <div class="text-center">
+          <span class="material-icons">
+            fmd_good
+            </span>
+          <p class="mb-3 mt-4 fs-lg fw-bold ">指定地點</p>
+          <p class="mb-0 fs-lg">專業老師到你指定的地點 <br>一對一高效學習</p>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</main>
+
