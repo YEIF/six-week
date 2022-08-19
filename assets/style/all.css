@@ -14872,11 +14872,16 @@ header .material-icons {
   height: 100%;
   background: #1C1C1C;
   opacity: .9;
+  z-index: 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 @media (min-width: 576px) {
   .strengthsBg1-Pseudo, .strengthsBg2-Pseudo, .strengthsBg3-Pseudo, .strengthsBg4-Pseudo {
     opacity: .8;
+    z-index: 2;
   }
 }
 
