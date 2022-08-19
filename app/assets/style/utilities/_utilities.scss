@@ -1,16 +1,28 @@
 //  @import './utils/utilities';
- @import './utils/util_base';
- @import '../../../../node_modules/bootstrap/scss/utilities/api';
+@import './utils/util_base';
+@import '../../../../node_modules/bootstrap/scss/utilities/api';
 
 
- .h-400 {
-   height: 400px;
- }
+.h-400 {
+  height: 400px;
+}
 
- .my-80 {
-   margin-top: 80px;
-   margin-bottom: 80px;
- }
+.my-80 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.gradient-custom {
+  background-image: linear-gradient(104deg, #62DB54, #09ACF5);
+}
+.gradient-blue-green {
+  background-image: linear-gradient(to right,#09ACF5,#62DB54 );
+}
+.gradient-text-custom {
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  background-clip: text;
+  color: transparent;
+}
 
 //  .container {
 //    padding-left: 1.5rem;

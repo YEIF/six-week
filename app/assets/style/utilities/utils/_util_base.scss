@@ -27,5 +27,22 @@ $utilities: map-merge(
         class: fs,
         values: $font-sizes
       ),
+      "border-radius": (
+        // rfs: true,
+        // responsive: true,
+        property: border-radius,
+        class: radius,
+        values:  (
+          1: 1pt,
+          2: 2pt,
+          3: 3pt,
+          4: 4pt,
+          8: 8pt,
+          12:12pt,
+          16:16pt,
+          20:20pt,
+          24:24pt
+        )
+      ),
     )
 );
