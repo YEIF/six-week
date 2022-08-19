@@ -1,13 +1,18 @@
-.h-400{
-  height: 400px;
-}
+//  @import './utils/utilities';
+ @import './utils/util_base';
+ @import '../../../../node_modules/bootstrap/scss/utilities/api';
 
-.my-80{
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
 
-.container{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
+ .h-400 {
+   height: 400px;
+ }
+
+ .my-80 {
+   margin-top: 80px;
+   margin-bottom: 80px;
+ }
+
+//  .container {
+//    padding-left: 1.5rem;
+//    padding-right: 1.5rem;
+//  }

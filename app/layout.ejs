@@ -9,7 +9,9 @@
     <%- title %>
   </title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -34,11 +36,11 @@
         <h1 class="mb-0"><a href="./" class="py-4 d-block"><img src="./assets/images/logo2.svg" class="logo "
               alt="logo"></a></h1>
         <nav class="navbar navbar-dark  d-md-none">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          <div>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
               aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="material-icons fs-4 gradient-text-custom">drag_handle</span>
             </button>
           </div>
         </nav>
@@ -46,48 +48,29 @@
       <div class="collapse bg-blackLight" id="navbarToggleExternalContent">
         <ul class="list-unstyled mb-0  text-center d-flex flex-column gap-4 py-4">
           <li><a href="#" class="text-white">首頁</a></li>
-          <li><a href="#" class="text-white" >課程介紹</a></li>
-          <li class="d-flex align-items-center justify-content-center"><a href="#" class="d-flex  align-items-center text-white"><span class="me-1 text-white material-icons d-block">
+          <li><a href="#" class="text-white">課程介紹</a></li>
+          <li class="d-flex align-items-center justify-content-center"><a href="#"
+              class="d-flex  align-items-center text-white"><span class="me-1 text-white material-icons d-block">
                 account_circle
               </span>登入</a></li>
         </ul>
       </div>
     </div>
-  </header>
-  <!-- <header class="bg-primary">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <h1 class="mb-0"><a href="./" class="py-4 d-block"><img src="./assets/images/logo.svg" class="logo " alt="logo"></a></h1>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div class="d-flex">
+      <hr size="2" class="w-50 bg-greenLight">
+      </hr>
+      <hr size="2" class="w-50 bg-blueLight">
+      </hr>
     </div>
-  </header> -->
+  </header>
   <%- contents %>
 
     <footer class="footer text-center bg-blackFooter text-whiteFooter py-4 ">
       <p class="mb-0">Coding Home © 2022 All Rights Reserved</p>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>

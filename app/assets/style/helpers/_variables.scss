@@ -16,7 +16,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black: #000 !default;
+
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -45,6 +45,7 @@ $yellow: #ffc107 !default;
 $green: #198754 !default;
 $teal: #20c997 !default;
 $cyan: #0dcaf0 !default;
+$black: #000 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -78,9 +79,9 @@ $dark: $gray-900  !default;
 $blueDark: #221660 !default;
 $blueLight: #09ACF5 !default;
 $greenLight: #62DB54 !default;
-$blackFooter:#1A1A1A !default;
-$whiteFooter:#909090 !default;
-$blackDark:#202020  !default;
+$blackFooter: #1A1A1A !default;
+$whiteFooter: #909090 !default;
+$blackDark: #202020 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -99,6 +100,7 @@ $theme-colors: (
   "blackFooter":$blackFooter,
   "whiteFooter":$whiteFooter,
   "blackDark":$blackDark,
+  "black":$black,
   ) !default;
 // scss-docs-end theme-colors-map
 
@@ -268,7 +270,10 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 4,
-  7: $spacer *5 ,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  2L:$spacer * 2,
+  40:$spacer * 2.5,
   ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -481,14 +486,14 @@ $h6-font-size: $font-size-base  !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size,
-  lg:$font-size-base*1.125,
-  sm:$font-size-base*0.875) !default;
+  1: $h1-font-size, // 40px
+  2: $h2-font-size, // 32px
+  3: $h3-font-size, // 28px
+  4: $h4-font-size, // 24px
+  5: $h5-font-size, // 20px
+  6: $h6-font-size, // 16px
+  lg:$font-size-base*1.125, // 18px
+  sm:$font-size-base*0.875) !default; //14px
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
@@ -1512,5 +1517,7 @@ $pre-color: null !default;
 
 //自訂
 
-$en-font-size : 'Azeret Mono', monospace;
-$tw-font-size : 'Noto Sans TC', sans-serif;
+$en-font-size : 'Azeret Mono',
+monospace;
+$tw-font-size : 'Noto Sans TC',
+sans-serif;
