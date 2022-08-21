@@ -10015,6 +10015,10 @@ header {
   font-size: 0.875rem !important;
 }
 
+.fs-xs {
+  font-size: 0.75rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -11350,6 +11354,9 @@ header {
   .fs-sm-sm {
     font-size: 0.875rem !important;
   }
+  .fs-sm-xs {
+    font-size: 0.75rem !important;
+  }
   .text-sm-start {
     text-align: left !important;
   }
@@ -12316,6 +12323,9 @@ header {
   }
   .fs-md-sm {
     font-size: 0.875rem !important;
+  }
+  .fs-md-xs {
+    font-size: 0.75rem !important;
   }
   .text-md-start {
     text-align: left !important;
@@ -13284,6 +13294,9 @@ header {
   .fs-lg-sm {
     font-size: 0.875rem !important;
   }
+  .fs-lg-xs {
+    font-size: 0.75rem !important;
+  }
   .text-lg-start {
     text-align: left !important;
   }
@@ -14250,6 +14263,9 @@ header {
   }
   .fs-xl-sm {
     font-size: 0.875rem !important;
+  }
+  .fs-xl-xs {
+    font-size: 0.75rem !important;
   }
   .text-xl-start {
     text-align: left !important;
@@ -15218,6 +15234,9 @@ header {
   .fs-xxl-sm {
     font-size: 0.875rem !important;
   }
+  .fs-xxl-xs {
+    font-size: 0.75rem !important;
+  }
   .text-xxl-start {
     text-align: left !important;
   }
@@ -15948,12 +15967,12 @@ header .material-icons {
   }
 }
 
-.card img {
+.course .card img {
   width: 100px;
   height: 100px;
 }
 
-.card-body {
+.course .card-body {
   max-width: 576px;
 }
 
