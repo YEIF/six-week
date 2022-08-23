@@ -8,10 +8,15 @@
 .logo {
   width: 24px;
   height: 24px;
-
-  @include media-breakpoint-up(sm) {
+  text-indent:101%; /*首行縮排*/
+  overflow:hidden; /*自動隱藏超出的文字或圖片*/
+  white-space:nowrap; /*希望元素在第一排上面，沒有斷行*/
+  background-image: url(../../assets/images/logo2.svg);
+  background-repeat: no-repeat;
+  @include media-breakpoint-up(md) {
     width: 174px;
     height: 42px;
+    background-image: url(../../assets/images/logo.svg);
   }
 
 }
@@ -26,7 +31,7 @@
     left: calc(50% - 25px);
   }
 
-  @media (min-width: 576px) {
+  @include media-breakpoint-up(xl){
     &::before {
       left: 0px
     }
@@ -53,10 +58,16 @@
   }
 
   // background-image: url(../../assets/images/bg_home.jpg);
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     background-image: url(../../assets/images/bg_home.jpg);
     height: 680px;
-
+    h2 {
+      font-size: 32px;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    background-image: url(../../assets/images/bg_home.jpg);
+    height: 680px;
     h2 {
       font-size: 48px;
       line-height: 70px;
@@ -100,7 +111,7 @@
       color: transparent;
     }
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       background-color: $primary;
 
       .material-icons {
@@ -121,7 +132,7 @@
       top: calc(100% - 40px + 16px);
       left: calc(50% - 25px);
 
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(md) {
         top: calc(100% - 60px + 16px);
 
       }
@@ -158,7 +169,7 @@
       top: calc(100% - 40px + 16px);
       left: calc(50% - 25px);
 
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(md) {
         top: calc(100% - 64px + 16px);
       }
     }
@@ -205,7 +216,7 @@
       top: calc(100% - 40px + 16px);
       left: calc(50% - 25px);
       
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(md) {
         top: calc(100% - 64px + 16px);
       }
     }
@@ -226,9 +237,9 @@
   }
 
   .card-body {
-    h5 {
-      height: 58px;
-    }
+    // h5 {
+    //   height: 58px;
+    // }
 
     p {
       -webkit-line-clamp: 3;
@@ -277,14 +288,14 @@
     background-size: cover;
     height: 263px;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
       height: 615px;
     }
 
     .material-icons {
       color: $greenLight;
 
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(md) {
         color: $white;
       }
     }
@@ -310,7 +321,7 @@
       opacity: .9;
       z-index: 0;
       transition: all 0.4s;
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(lg) {
         opacity: .8;
         z-index:2;
       }
@@ -333,7 +344,7 @@
           border-bottom: 3pt solid $greenLight;
           transition: all 0.4s;
 
-          @include media-breakpoint-up(sm) {
+          @include media-breakpoint-up(md) {
             left: 0;
             border-bottom: 3pt solid $whiteFooter;
           }
@@ -373,7 +384,7 @@
       top: calc(100% - 40px + 16px);
       left: calc(50% - 25px);
       
-      @include media-breakpoint-up(sm) {
+      @include media-breakpoint-up(md) {
         top: calc(100% - 64px + 16px);
       }
     }
