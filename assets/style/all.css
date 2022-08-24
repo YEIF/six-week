@@ -8507,6 +8507,25 @@ header {
   border-bottom: 1px solid linear-gradient(to right, #62DB54, #09ACF5);
 }
 
+header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#62DB54), color-stop(50%, #62DB54), color-stop(50%, #09ACF5), to(#09ACF5));
+  background: -o-linear-gradient(left, #62DB54 0%, #62DB54 50%, #09ACF5 50%, #09ACF5 100%);
+  background: linear-gradient(to right, #62DB54 0%, #62DB54 50%, #09ACF5 50%, #09ACF5 100%);
+}
+
+@media (min-width: 992px) {
+  header::before {
+    top: 100%;
+  }
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -15721,7 +15740,7 @@ header .material-icons {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .logo {
     width: 174px;
     height: 42px;
