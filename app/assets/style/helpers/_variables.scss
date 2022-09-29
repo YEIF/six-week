@@ -504,7 +504,10 @@ $font-sizes: (
   lg:$font-size-base*1.125,
   // 18px
   sm:$font-size-base*0.875 ,
-  xs:$font-size-base*0.75)!default; //14px
+  //14px
+  xs:$font-size-base*0.75,
+  
+  48:$font-size-base*3) !default; 
 // scss-docs-end font-sizes
 
 // scss-docs-start headings-variables
